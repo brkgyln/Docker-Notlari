@@ -11,3 +11,12 @@
 - **VOLUME** > dosya sistemine dizin eklemek 
 - **RUN** > çalıştırılacak komutlar CMD RUN komutu gibi çalışır ama CMD parametresi alır. - ENTRYPOINT >container çalıştırılırken parametre verilerek çalıştırılmak istenirse kullanılır. 
 - **ENV** > çevresel değişkenleri tanımlamak için kullanılır.
+
+- Stop all the containers
+
+docker stop $(docker ps -a -q)
+
+- Remove all the containers
+
+docker rm $(docker ps -a -q)
+
